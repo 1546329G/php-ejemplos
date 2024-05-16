@@ -1,37 +1,91 @@
 <?php
 //caso 1 
 //E1 
+/*
 $numeros = array(1,3,5,2,6);
 print_r($numeros);
 
-/*E_2*/
+E_2
 $numeros = array(1,3,5,2,6);
 $frutas = ["fresa","naranja","manzana","mandarina"];
 print_r($numeros);
-print_r($frutas);
+print_r($frutas);*/
 
 
 
-//caso 2
+/*CASO 2*/
 
-$estudinate = array(
-    "DNI"=>"0202332",
-    "edad"=>"18",
-    "fehca_nacimiento"=>"200-02-01",
-    "nombres"=>"gandy",
-    "apellido"=>"humri",
-    "ciclo"=>3,
-    "deuda"=>100.5545,
-    "nota_final"=>12.6);
-
-  print_r($estudinate);
-  foreach($estudinate as $key=>$value) {
-    echo $key." -  ".$value."\n";
-  }  
-
+$estudiante = array(
+    "edad"=>27,
+    "fechanacimiento"=>"2000-01-05",
+    "nombres"=>"pedro",
+    "apellidos"=>"paredes ",
+    "semestre"=>3,
+    "deuda"=>100.50,
+    "notafinal"=>11.6,);
+print_r($estudiante);
+foreach($estudiante as $key=>$value){
+    echo $key." - ".$value."\n";
+}
   //caso 3
-
-
-
+ 
+$estudiante1 = array(
+    "dni"=>"45716756",
+    "edad"=>24,
+    "fechanacimiento"=>"2003-01-05",
+    "nombres"=>"rodrigo",
+    "apellidos"=>"alvares ",
+    "semestre"=>1,
+    "deuda"=>100.01,
+    "notafinal"=>13.6,);
+ 
+   
+$estudiante2 = array(
+    "dni"=>"45745356",
+    "edad"=>26,
+    "fechanacimiento"=>"2002-01-05",
+    "nombres"=>"mario",
+    "apellidos"=>"mercedes ",
+    "semestre"=>3,
+    "deuda"=>100.99,
+    "notafinal"=>14.6,);
+ 
+ 
+$estudiante3 = array(
+    "dni"=>"45746756",
+    "edad"=>28,
+    "fechanacimiento"=>"2001-01-05",
+    "nombres"=>"juancho",
+    "apellidos"=>"camioneta ",
+    "semestre"=>2,
+    "deuda"=>100,
+    "notafinal"=>15.1,);
+ 
+    $estudiantes = array($estudiante1,$estudiante2,$estudiante3);
+    foreach($estudiantes as $key1=>$estudiante){
+        echo "Estudiante N° ".($key1+1)."\n";
+        foreach($estudiante as $key=>$value) {
+            echo $key." - ".$value."\n";
+        }
+    }
+    echo "-----------------------------------------------\n";
+    for($i=0;$i<=count($estudiantes)-1;$i++) {
+        echo "Estudiante N° ".($i+1)."\n";
+        echo "dni ".$estudiantes[$i]["dni"]."\n";
+        echo "edad - ".$estudiantes[$i]["edad"]."\n";
+        echo "fechanacimiento ".$estudiantes[$i] ["fechanacimiento"]."\n";
+        echo "nombres ".$estudiantes[$i] ["nombres"]."\n";
+        echo "apellidos".$estudiantes[$i] ["apellidos"]."\n";
+        echo "semestre ".$estudiantes[$i]["semestre"]."\n";
+        echo "deuda ".$estudiantes[$i] ["deuda"]."\n";
+        echo "notafinal".$estudiantes[$i] ["notafinal"]."\n";
+    }
+        $estudiante3 ["notafinal"] = 17.6;
+        $equipo1 = ["messi","cueva","neymar"];
+        $equipo2 = ["advincula","lewandoski","ronaldhino"];
+        $equipos = array_merge($equipo1,$equipo2);
+        foreach($equipos as$key=>$equipo) {
+        }
+        echo $equipo."\n";
 ?>
 
