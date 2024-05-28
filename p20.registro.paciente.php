@@ -8,10 +8,10 @@
 </head>
 <body>
 <h2>REGISTRO  PASIENTE</h2>
-<label for="nombre"> nombre:</label>
+<label for="nombre"> Nombre:</label>
 <input type="text" id="nombre" name="nombre" required /><br>
 
-<label for="apellido">apellido:</label>
+<label for="apellido"><A></A>pellido:</label>
 <input type="text" id="apellido" name="apellido" required /><br>
 
 <label for="edad">Edad: </label>
