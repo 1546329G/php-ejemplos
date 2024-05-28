@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>Hello, mi gente hermaosa !</h1>
-    <h1>Hello, JULIO PANPAÑAUPA  :] </h1> 
+    <h1>Hello, JULIO PANPAÑA :] </h1> 
 
    
 </body>
